@@ -44,55 +44,65 @@ explode the tar file
 
 `multipass shell wordpress`
 
-    1  whoami
-    2  ls -la
-    3  cat .ssh
-    4  ls .ssh
-    5  cat .ssh/authorized_keys
-    6  exit
-    7  sudo apt install mysql-client mysql-server
-    8  sudo apt install -y  mysql-client mysql-server
-    9  systemctl status mysql.service
 
-10 which mysql
-11 mysql
-12 sudo mysql -u root
-13 history
-14 sudo apt install -y php
-15 mysql -u root
-16 sudo mysql -u root
-17 php --version
-18 wget https://wordpress.org/latest.tar.gz
-19 tar -xzvf latest.tar.gz
-20 nano wordpress/wp-config-sample.php
-21 ip a
-22 history
+sudo apt install mysql-client mysql-server
+sudo apt install -y  mysql-client mysql-server
+systemctl status mysql.service
 
+10. which mysql
+11. mysql
+12. sudo mysql -u root
+13. history
+14. sudo apt install -y php
+15. mysql -u root
+16. sudo mysql -u root
+17. php --version
+18. wget https://wordpress.org/latest.tar.gz
+19. tar -xzvf latest.tar.gz
+20. nano wordpress/wp-config-sample.php
+21. ip a
+22. history
+23. 
+<br>
+<br>
 
+to access mysql monitor
 
-`sudo mysql` to access mysql monitor
+`sudo mysql` 
+<br>
+<br>
+
 
 first login to the database server as follows:
 `sudo mysql -u root -p`
 
+<br>
+<br>
+
 mysql> `SHOW DATABASES;`
-+--------------------+
-| Database |
-+--------------------+
-| information_schema |
-| mysql |
-| performance_schema |
-| sys |
-| wordpressdb |
-+--------------------+
-5 rows in set (0.01 sec)
+      
+      | Database |
+      +--------------------+
+      | information_schema |
+      | mysql |
+      | performance_schema |
+      | sys |
+      | wordpressdb |
+      +--------------------+
+      5 rows in set (0.01 sec)
+
 
 check ip address of vm
+<br>
 `ip a`
+<br>
 // 192.168.64.2
-
+<br>
+<br>
+<br>
+<br>
 mysql> `select current_user();`
-+----------------+
-| current_user() |
-+----------------+
-| root@localhost |
+    
+      | current_user() |
+      +----------------+
+      | root@localhost |
